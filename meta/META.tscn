@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg485m4xgjqr0"]
+
+[ext_resource type="PackedScene" uid="uid://cfgh7n6ma58re" path="res://texture_rect.tscn" id="1_5vxe8"]
+[ext_resource type="PackedScene" uid="uid://oy2whrcjn4fg" path="res://tile_map.tscn" id="2_n2fg5"]
+[ext_resource type="PackedScene" uid="uid://vpwt3exd0pi3" path="res://maincharecater/character_body_2d.tscn" id="3_wdy10"]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" parent="." instance=ExtResource("1_5vxe8")]
+
+[node name="TileMap" parent="." instance=ExtResource("2_n2fg5")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_wdy10")]
+position = Vector2(184, 67)
